@@ -1,0 +1,10 @@
+E:\Projects\ConsoleCalculator\bin\Release\ConsoleCalculator.exe
+E:\Projects\ConsoleCalculator\bin\Release\ConsoleCalculator.pdb
+E:\Projects\ConsoleCalculator\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Projects\ConsoleCalculator\obj\x86\Release\ConsoleCalculator.exe
+E:\Projects\ConsoleCalculator\obj\x86\Release\ConsoleCalculator.pdb
+\\cs1\2018\agazeley18\CS320-1\ConsoleCalculator\ConsoleCalculator\obj\x86\Release\ConsoleCalculator.exe
+\\cs1\2018\agazeley18\CS320-1\ConsoleCalculator\ConsoleCalculator\obj\x86\Release\ConsoleCalculator.pdb
+\\cs1\2018\agazeley18\CS320-1\ConsoleCalculator\ConsoleCalculator\bin\Release\ConsoleCalculator.exe
+\\cs1\2018\agazeley18\CS320-1\ConsoleCalculator\ConsoleCalculator\bin\Release\ConsoleCalculator.pdb
+\\cs1\2018\agazeley18\CS320-1\ConsoleCalculator\ConsoleCalculator\obj\x86\Release\ConsoleCalculator.csprojResolveAssemblyReference.cache
