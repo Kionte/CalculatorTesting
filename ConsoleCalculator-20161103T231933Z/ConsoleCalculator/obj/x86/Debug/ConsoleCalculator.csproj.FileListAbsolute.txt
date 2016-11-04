@@ -25,3 +25,5 @@ C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T2319
 C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\ConsoleCalculator\bin\Debug\ConsoleCalculator.exe
 C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\ConsoleCalculator\bin\Debug\ConsoleCalculator.pdb
 C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\ConsoleCalculator\obj\x86\Debug\ConsoleCalculator.csprojResolveAssemblyReference.cache
+Z:\eparslow18\CS320-1\CalculatorTesting\ConsoleCalculator-20161103T231933Z\ConsoleCalculator\obj\x86\Debug\ConsoleCalculator.exe
+Z:\eparslow18\CS320-1\CalculatorTesting\ConsoleCalculator-20161103T231933Z\ConsoleCalculator\obj\x86\Debug\ConsoleCalculator.pdb

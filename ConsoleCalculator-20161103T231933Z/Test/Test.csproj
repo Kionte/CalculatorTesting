@@ -45,11 +45,14 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
     <Compile Include="KionteTesting\StringManipulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AndrewTesting\" />
-    <Folder Include="ElishaTesting\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
