@@ -1,0 +1,9 @@
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Test.dll
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Test.pdb
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\ConsoleCalculator.exe
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\ConsoleCalculator.pdb
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.dll
+C:\Users\kbrown17\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.pdb
