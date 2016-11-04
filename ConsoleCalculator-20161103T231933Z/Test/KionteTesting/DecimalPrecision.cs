@@ -74,20 +74,20 @@ namespace ConsoleCalculator
         {
             Assert.AreEqual(0, Calc("1 - (1/2) - (1/2)"));
         }
-      // [TestMethod]
+       [TestMethod]
         public void DecimalPrecision_E()
         {
-            Assert.AreEqual(2, Calc("8^(1/3)"));
+            Assert.AreEqual(2, Calc("pow(8,(1/3))"));
         }
-      // [TestMethod]
+       [TestMethod]
         public void DecimalPrecision_E2()
         {
-            Assert.AreEqual(2, Calc("16^(1/4)"));
+            Assert.AreEqual(2, Calc("pow(16,(1/4))"));
         }
-      // [TestMethod]
+       [TestMethod]
        public void DeciamlPrecision_E3()
         {
-            Assert.AreEqual(2, Calc("4^(1/2)"));
+            Assert.AreEqual(2, Calc("pow(4,(1/2))"));
         }
         [TestMethod]
         public void DecimalPrecision_NM()
