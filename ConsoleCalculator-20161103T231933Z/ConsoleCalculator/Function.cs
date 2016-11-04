@@ -6,9 +6,9 @@ using System.Text;
 namespace ConsoleCalculator {
 	public delegate void ExecuteFunctionAction(IRuntime stack);
 
-	public class Function {
-		public string Name { get; private set; }
-		public ExecuteFunctionAction Execute { get; private set; }
+    public class Function {
+        public string Name { get; private set; }
+        public ExecuteFunctionAction Execute { get; private set; }
 		public bool VariableArgs { get; set; }
 
 		public Function(string name, ExecuteFunctionAction execute) {
