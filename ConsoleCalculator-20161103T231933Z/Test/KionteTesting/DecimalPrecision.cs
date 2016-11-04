@@ -149,20 +149,20 @@ namespace ConsoleCalculator
         {
             Assert.AreEqual(0, Calc("1 - -(1/2) - -(1/2)"));
         }
-        //  [TestMethod]
+          [TestMethod]
         public void DecimalPrecision_NE()
         {
-            Assert.AreEqual(0.5, Calc("8^-(1/3)"));
+            Assert.AreEqual(0.5, Calc("pow(8, -(1/3))"));
         }
-        // [TestMethod]
+         [TestMethod]
         public void DecimalPrecision_NE2()
         {
-            Assert.AreEqual(0.5, Calc("16^-(1/4)"));
+            Assert.AreEqual(0.5, Calc("pow(16, -(1/4))"));
         }
-        // [TestMethod]
+         [TestMethod]
         public void DeciamlPrecision_NE3()
         {
-            Assert.AreEqual(0.5, Calc("4^-(1/2)"));
+            Assert.AreEqual(0.5, Calc("pow(4, -(1/2))"));
         }
 
     }
