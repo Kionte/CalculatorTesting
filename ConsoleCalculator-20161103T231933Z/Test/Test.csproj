@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
+    <Compile Include="KionteTesting\AbnormalCharacters.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
     <Compile Include="KionteTesting\StringManipulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
