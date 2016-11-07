@@ -14,26 +14,36 @@ namespace ConsoleCalculator
             return calc.Answer;//Returns the answer double from the evaluated expression.
         }
 
-       
-        public string ScannerEX()
-        {                           //getting access to the scanner exception
-            CalculatorException ex = new CalculatorException();
-            return ex.Message.ToString();
 
-        }
+        //public CalculatorException ScannerEX()
+        //{                           //getting access to the scanner exception
+        //    CalculatorException ex = new CalculatorException();
+        //    return ex;
+
+        //}
 
         [TestMethod]
         public void characters()
         {
+            bool ex = false;
+            try
+            {
+                CalcSim("b + c");
+            }
 
-            Assert.AreEqual(ScannerEX(), CalcSim("b +c ")); //Assert.x (expected, tested) 
+            catch
+            {          
+                ex = true;
+            }
+            Assert.AreEqual(ex, true); //Assert.x (expected, tested) 
+            //made true because that means the exception was thrown 
         }
 
-        //[TestMethod]
-        //public void spacesBetweenCharacters()
-        //{
+        [TestMethod]
+        public void spacesBetweenCharacters()
+        {
 
-        //}
+        }
 
     }
 }
