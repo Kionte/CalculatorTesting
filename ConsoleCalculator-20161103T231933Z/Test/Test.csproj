@@ -52,9 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AndrewTesting\Test_calcExcecute.cs" />
     <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
     <Compile Include="KionteTesting\AbnormalCharacters.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
+    <Compile Include="KionteTesting\Robust.cs" />
     <Compile Include="KionteTesting\StringManipulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,9 +66,7 @@
       <Name>ConsoleCalculator</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AndrewTesting\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
