@@ -22,9 +22,10 @@ namespace ConsoleCalculator
             {
                 CalcSim("b + c");
             }
-            catch
+            catch(CalculatorException e)
             {          
                 ex = true;
+                Console.WriteLine(e.ToString());
             }
             Assert.AreEqual(ex, true); //Assert.x (expected, tested) 
             //made true because that means the exception was thrown 
