@@ -26,3 +26,10 @@ C:\Users\kbrown17\Source\Repos\CalculatorTesting2\ConsoleCalculator-20161103T231
 C:\Users\kbrown17\Source\Repos\CalculatorTesting2\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Users\kbrown17\Source\Repos\CalculatorTesting2\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.dll
 C:\Users\kbrown17\Source\Repos\CalculatorTesting2\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.pdb
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Test.dll
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\Test.pdb
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\ConsoleCalculator.exe
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\bin\Debug\ConsoleCalculator.pdb
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.dll
+C:\Users\eparslow18\Source\Repos\CalculatorTesting\ConsoleCalculator-20161103T231933Z\Test\obj\Debug\Test.pdb
