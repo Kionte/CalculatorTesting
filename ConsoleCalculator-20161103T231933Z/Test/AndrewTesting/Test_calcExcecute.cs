@@ -17,10 +17,48 @@ namespace ConsoleCalculator
             return calc.Answer;//Returns the answer double from the evaluated expression.
         }
 
-        public void something()
+        //TEST VARIABLE NUMBERS PI AND e
+        [TestMethod]
+        public void Test_PI_lower()
         {
-
+            string input = "pi";
+            double expected = Math.PI;
+            Assert.AreEqual(expected, CalcSim(input));
         }
+        [TestMethod]
+        public void Test_PI_upper()
+        {
+            string input = "PI";
+            double expected = Math.PI;
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_e_lower()
+        {
+            string input = "e";
+            double expected = Math.E;
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_e_upper()
+        {
+            string input = "E";
+            double expected = Math.E;
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; }
+            Assert.AreEqual(true, tf);
+        }
+
 
         //BASIC TWO VAR INPUTS 
         [TestMethod]//Write tests as Test_[Function]_[Cond1]_[Cond2]
@@ -128,16 +166,20 @@ namespace ConsoleCalculator
             double math = -20 * -20;
             Assert.AreEqual(math, CalcSim("-20 * -20"));
         }
-        /*
+
         [TestMethod]
-        public void Test_div_zero()
+        public void Test_div_zero()//Should fail because it does not throw a divisible by zero error. It outputs infinity:(
         {
-            //Cannot test in this Test class. Need a way to check if the calculator registered a error for Robust boundary testing
-            Calculator calc = new Calculator();
-            
-            Assert.IsFalse(calc.Execute("20 / 0"));
+            string input = "20 / 0";
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; }
+            Assert.AreEqual(true, tf);
         }
-        */
+
         //TRIG FUNCTION TESTS
         [TestMethod]
         public void Test_Sin_Pos_Par_Rad()
@@ -160,14 +202,27 @@ namespace ConsoleCalculator
         {
             string input = "sin pi";
             double expected = Math.Sin(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+
         }
         [TestMethod]
         public void Test_Sin_Pos_No_Deg()
         {
             string input = "sin 1";
             double expected = Math.Sin(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Sin_Neg_Par_Rad()
@@ -188,14 +243,26 @@ namespace ConsoleCalculator
         {
             string input = "sin -1";
             double expected = Math.Sin((-1));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Sin_Neg_No_Rad()
         {
             string input = "sin -pi";
             double expected = Math.Sin((-1 * Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Cos_Pos_Par_Rad()
@@ -216,14 +283,26 @@ namespace ConsoleCalculator
         {
             string input = "cos pi ";
             double expected = Math.Cos(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Cos_Pos_No_Deg()
         {
             string input = "cos 1";
             double expected = Math.Cos(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Cos_Neg_Par_Rad()
@@ -244,14 +323,26 @@ namespace ConsoleCalculator
         {
             string input = "cos -pi";
             double expected = Math.Cos(-1 * (Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Cos_Neg_No_Deg()
         {
             string input = "cos -1";
             double expected = Math.Cos(-1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Tan_Pos_Par_Rad()
@@ -272,14 +363,26 @@ namespace ConsoleCalculator
         {
             string input = "tan pi";
             double expected = Math.Tan(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Tan_Pos_No_Deg()
         {
             string input = "tan 1";
             double expected = Math.Tan(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Tan_Neg_Par_Rad()
@@ -300,14 +403,26 @@ namespace ConsoleCalculator
         {
             string input = "tan -pi";
             double expected = Math.Tan(-1 * (Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Tan_Neg_No_Deg()
         {
             string input = "tan -1";
             double expected = Math.Tan(-1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         //TRIG FUNCTION TESTS
         [TestMethod]
@@ -331,14 +446,26 @@ namespace ConsoleCalculator
         {
             string input = "asin pi";
             double expected = Math.Asin(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aSin_Pos_No_Deg()
         {
             string input = "asin 1";
             double expected = Math.Asin(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aSin_Neg_Par_Rad()
@@ -359,14 +486,26 @@ namespace ConsoleCalculator
         {
             string input = "asin -1";
             double expected = Math.Asin((-1));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aSin_Neg_No_Rad()
         {
             string input = "asin -pi";
             double expected = Math.Asin((-1 * Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aCos_Pos_Par_Rad()
@@ -387,14 +526,26 @@ namespace ConsoleCalculator
         {
             string input = "acos pi ";
             double expected = Math.Acos(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aCos_Pos_No_Deg()
         {
             string input = "acos 1";
             double expected = Math.Acos(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aCos_Neg_Par_Rad()
@@ -415,14 +566,26 @@ namespace ConsoleCalculator
         {
             string input = "acos -pi";
             double expected = Math.Acos(-1 * (Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aCos_Neg_No_Deg()
         {
             string input = "acos -1";
             double expected = Math.Acos(-1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aTan_Pos_Par_Rad()
@@ -443,19 +606,31 @@ namespace ConsoleCalculator
         {
             string input = "atan pi";
             double expected = Math.Atan(Math.PI);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Atan_Pos_No_Deg()
         {
             string input = "atan 1";
             double expected = Math.Atan(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_aTan_Neg_Par_Rad()
         {
-            string input = "atan(-pi)";
+            string input = "atan(- pi)";
             double expected = Math.Atan(-1 * (Math.PI));
             Assert.AreEqual(expected, CalcSim(input));
         }
@@ -471,14 +646,26 @@ namespace ConsoleCalculator
         {
             string input = "atan -pi";
             double expected = Math.Atan(-1 * (Math.PI));
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_Atan_Neg_No_Deg()
         {
             string input = "atan -1";
             double expected = Math.Atan(-1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         //Regular Functions
         [TestMethod]
@@ -500,15 +687,146 @@ namespace ConsoleCalculator
         {
             string input = "ln 1";
             double expected = Math.Log(1);
-            Assert.AreEqual(expected, CalcSim(input));
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
         }
         [TestMethod]
         public void Test_ln_Pos_No_Rad()
         {
             string input = "ln pi";
             double expected = Math.Log(Math.PI);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_ln_Neg_Par_Deg()
+        {
+            string input = "ln(-1)";
+            double expected = Math.Log(-1);
             Assert.AreEqual(expected, CalcSim(input));
         }
-
+        [TestMethod]
+        public void Test_ln_Neg_Par_Rad()
+        {
+            string input = "ln(-pi)";
+            double expected = Math.Log(-1 * Math.PI);
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_ln_Neg_No_Deg()
+        {
+            string input = "ln -1";
+            double expected = Math.Log(-1);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_ln_Neg_No_Rad()
+        {
+            string input = "ln -pi";
+            double expected = Math.Log(-1 * Math.PI);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_log_Pos_Par_Deg()
+        {
+            string input = "log(10)";
+            double expected = Math.Log10(10);
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_log_Pos_Par_Rad()
+        {
+            string input = "log(pi)";
+            double expected = Math.Log10(Math.PI);
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_log_Pos_No_Deg()
+        {
+            string input = "log 10";
+            double expected = Math.Log10(10);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_log_Pos_No_Rad()
+        {
+            string input = "log pi";
+            double expected = Math.Log10(Math.PI);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_log_Neg_Par_Deg()
+        {
+            string input = "log(-10)";
+            double expected = Math.Log10(-10);
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_log_Neg_Par_Rad()
+        {
+            string input = "log(-pi)";
+            double expected = Math.Log10(-1 * Math.PI);
+            Assert.AreEqual(expected, CalcSim(input));
+        }
+        [TestMethod]
+        public void Test_log_Neg_No_Deg()
+        {
+            string input = "log -10";
+            double expected = Math.Log10(-10);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
+        [TestMethod]
+        public void Test_log_Neg_No_Rad()
+        {
+            string input = "log -pi";
+            double expected = Math.Log10(-1 * Math.PI);
+            bool tf = false;
+            try
+            {
+                CalcSim(input);
+            }
+            catch (CalculatorException ex) { tf = true; Console.WriteLine(ex.Message); }
+            Assert.AreEqual(true, tf);
+        }
     }
 }
