@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="AndrewTesting\Test_calcExcecute.cs" />
     <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
+    <Compile Include="ElishaTesting\MaxMinAbsPowFunctions.cs" />
     <Compile Include="KionteTesting\AbnormalCharacters.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
     <Compile Include="KionteTesting\Robust.cs" />
