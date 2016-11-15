@@ -56,9 +56,9 @@
     <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
     <Compile Include="ElishaTesting\MaxMinAbsPowFunctions.cs" />
     <Compile Include="KionteTesting\AbnormalCharacters.cs" />
+    <Compile Include="KionteTesting\AbsoluteValue.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
     <Compile Include="KionteTesting\Robust.cs" />
-    <Compile Include="KionteTesting\StringManipulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

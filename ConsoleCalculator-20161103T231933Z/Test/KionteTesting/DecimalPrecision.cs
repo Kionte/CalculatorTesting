@@ -90,6 +90,21 @@ namespace ConsoleCalculator
             Assert.AreEqual(2, Calc("pow(4,(1/2))"));
         }
         [TestMethod]
+        public void DeciamlPrecision_Mod1()
+        {
+            Assert.AreEqual((1 / 3), Calc("(1/3) % 1"));
+        }
+        [TestMethod]
+        public void DeciamlPrecision_Mod2()
+        {
+            Assert.AreEqual(0.5, Calc("(1/2) % 1"));
+        }
+        [TestMethod]
+        public void DeciamlPrecision_Mod3()
+        {
+            Assert.AreEqual(0.25, Calc("(1/4) % 1"));
+        }
+        [TestMethod]
         public void DecimalPrecision_NM()
         {
             Assert.AreEqual(-1, Calc("-(1/3) * 3"));
@@ -164,6 +179,20 @@ namespace ConsoleCalculator
         {
             Assert.AreEqual(0.5, Calc("pow(4, -(1/2))"));
         }
-
+        [TestMethod]
+        public void DeciamlPrecision_NMod1()
+        {
+            Assert.AreEqual((2/3), Calc("-(1/3) % 1"));
+        }
+        [TestMethod]
+        public void DeciamlPrecision_NMod2()
+        {
+            Assert.AreEqual(0.5, Calc("-(1/2) % 1"));
+        }
+        [TestMethod]
+        public void DeciamlPrecision_NMod3()
+        {
+            Assert.AreEqual(0.75, Calc("-(1/4) % 1"));
+        }
     }
 }
