@@ -44,8 +44,7 @@ namespace Test.KionteTesting
         [TestMethod]
         public void ABS_Pos_Div()
         {
-            Assert.AreEqual(1, Calc("abs(1 / 1)"));
-
+            Assert.AreEqual(1, Calc("abs(1 / 1)")); 
         }
 
         [TestMethod]
