@@ -55,6 +55,7 @@
     <Compile Include="AndrewTesting\Test_calcExcecute.cs" />
     <Compile Include="ElishaTesting\ImproperInputSyntax.cs" />
     <Compile Include="ElishaTesting\MaxMinAbsPowFunctions.cs" />
+    <Compile Include="ElishaTesting\StressTesting.cs" />
     <Compile Include="KionteTesting\ModifiyConstant.cs" />
     <Compile Include="KionteTesting\AbsoluteValue.cs" />
     <Compile Include="KionteTesting\DecimalPrecision.cs" />
