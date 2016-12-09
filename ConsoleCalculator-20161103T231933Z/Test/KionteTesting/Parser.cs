@@ -15,6 +15,7 @@ namespace ConsoleCalculator
 
             return calc.Answer;
         }
+        [TestMethod]
         public void Delete_Non_Var()
         {
             bool a = true;
@@ -28,6 +29,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void Change_Val_Of_Non_var()
         {
             bool a = true;

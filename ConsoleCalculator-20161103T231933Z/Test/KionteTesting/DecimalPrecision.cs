@@ -55,6 +55,7 @@ namespace ConsoleCalculator
         {
             Assert.AreEqual(1, Calc("(1/4) + (3/4)"));
         }
+        [TestMethod]
         public void DecimalPrecision_A3()
         {
             Assert.AreEqual(1, Calc("(1/2) + (1/2)"));

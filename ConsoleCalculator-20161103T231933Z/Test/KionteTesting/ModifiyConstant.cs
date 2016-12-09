@@ -31,6 +31,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_E()
         {
             bool a = true;
@@ -44,6 +45,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_E_to_Pi()
         {
             bool a = true;
@@ -57,6 +59,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_Pi__to_E()
         {
             bool a = true;
@@ -70,6 +73,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_E_to_Err()
         {
             bool a = true;
@@ -83,6 +87,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_Pi_to_Err()
         {
             bool a = true;
@@ -96,6 +101,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_Del_E()
         {
             bool a = true;
@@ -109,6 +115,7 @@ namespace ConsoleCalculator
             }
             Assert.AreEqual(false, a);
         }
+        [TestMethod]
         public void ModConstant_Del_PI()
         {
             bool a = true;
